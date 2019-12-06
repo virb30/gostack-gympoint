@@ -6,7 +6,7 @@ Desafio final do Bootcamp GoStack - Gympoint
 
 - A versão mobile do Gympoint foi desenvolvida apenas para Android
 
-## Backend
+## backend
 
 - Foi incluido um campo "num_pages" no retorno de todas as listagens (que não constava no escopo), 
 para realização do controle de "última página" no frontend
