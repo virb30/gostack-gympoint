@@ -65,6 +65,7 @@ In order to create the admin user run:
 it will create a fake admin user with the credentials:
 
 > ***email:** admin@gympoint.com*
+
 > ***password:** 123456*
 
 
