@@ -14,7 +14,8 @@ class PlanController {
       offset: (page - 1) * per_page,
     });
 
-    const num_pages = Number(per_page) === 0 ? 1 : Math.ceil(total / per_page);
+    const num_pages =
+      Number(per_page) === 0 || total === 0 ? 1 : Math.ceil(total / per_page);
 
     return res.json({ plans, num_pages });
   }
