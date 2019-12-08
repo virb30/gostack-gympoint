@@ -23,7 +23,7 @@ With docker installed:
 
 or
 
-Install postgres and create a database named "gympoint"
+Install postgres on localhost using port 5432 and create a database named "gympoint"
 
 
 ### Setting up the Backend
@@ -36,7 +36,9 @@ All the commands below must be executed on backend directory
   cd backend
 ```
 
-#### install dependencies
+#### Install dependencies
+
+Install/upgrade project dependencies:
 
 ``` 
   # run yarn command
@@ -87,7 +89,9 @@ All the commands below must be executed on frontend directory
   cd frontend
 ```
 
-#### install dependencies
+#### Install dependencies
+
+Install/upgrade project dependencies:
 
 ``` 
   # run yarn command
@@ -111,7 +115,10 @@ All the commands below must be executed on mobile directory
   cd mobile
 ```
 
-#### install dependencies
+#### Install dependencies
+
+Install/upgrade project dependencies:
+
 ``` 
   # run yarn command
   yarn
@@ -119,13 +126,11 @@ All the commands below must be executed on mobile directory
 
 #### Start the application
 
-**Note:** this application only works on Android
+**Note:** this application only works on ***Android***
 
-First of all, start android emulator
+First of all, start android emulator and run:
 
 ``` 
-  #  navigate to mobile directory
-  cd mobile 
   # Run yarn start command
   react-native run-android
 ```
