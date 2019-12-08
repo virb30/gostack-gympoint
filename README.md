@@ -79,11 +79,13 @@ In order to create the admin user run:
   yarn sequelize db:seed:all
 ```
 
-this will create a fake admin user with the credentials:
+it will create a fake admin user with the credentials:
 
 ***email:** admin@gympoint.com*
 
 ***password:** 123456*
+
+**Note:** these credentials must be used to signin on frontend application
 
 ### Run the applications
 
