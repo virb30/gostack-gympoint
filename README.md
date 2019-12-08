@@ -9,11 +9,23 @@ Clone this repository to your local repository
 
 ```git clone https://github.com/virb30/gostack-gympoint.git <project-name>```
 
+### Setup database server/container
+
+Build and Start the docker database container
+
+With docker installed:
+```
+  # navigate to container directory
+  cd container
+  # build and start docker container
+  docker-compose up -d --build
+```
+
+or
+
+Install postgres and create a database named "gympoint"
+
 ### Install packages for each part of the application
-
-Start the docker database container
-
-
 
 Backend (Node.js)
 
@@ -42,9 +54,42 @@ Mobile (React Native)
   yarn
 ```
 
+### Create database structure
+
+All the commands below must be executed on backend directory
+
+```
+  # from project directory
+  # navigate to backend directory
+  cd backend
+```
+
+Run the migrations to create the correct database structure on "gympoint"
+
+```
+  # run migrations
+  yarn sequelize db:migrate
+```
+
+### Create the admin
+
+In order to create the admin user run:
+
+```
+  yarn sequelize db:seed:all
+```
+
+it will create a fake admin user with the credentials:
+
+***email:** admin@gympoint.com*
+
+***password:** 123456*
+
+**Note:** these credentials must be used to signin on frontend application
+
 ### Run the applications
 
-Backend (must be executed first)
+Backend (must be executed before frontend and mobile)
 
 ``` #  navigate to backend directory
     cd backend 
@@ -52,7 +97,9 @@ Backend (must be executed first)
     yarn dev
 ```
 
-Frontend
+**Note:** Frontend and mobile applications are independent, but both depends on backend
+
+#### Frontend
 
 ``` #  navigate to frontend directory
     cd frontend 
@@ -60,9 +107,12 @@ Frontend
     yarn start
 ```
 
-Mobile
+#### Mobile
 
-First of all, start android emulator (this application only works on Android)
+**Note:** this application only works on Android
+
+First of all, start android emulator
+
 ``` 
   #  navigate to mobile directory
   cd mobile 
