@@ -25,36 +25,8 @@ or
 
 Install postgres and create a database named "gympoint"
 
-### Install packages for each part of the application
 
-Backend (Node.js)
-
-``` 
-  # navigate to backend directory
-  cd backend
-  # run yarn command
-  yarn
-```
-
-Frontend (ReactJS)
- 
-``` 
-  # navigate to frontend directory
-  cd frontend
-  # run yarn command
-  yarn 
-```
-
-Mobile (React Native)
-
-``` 
-  # navigate to mobile directory
-  cd mobile
-  # run yarn command
-  yarn
-```
-
-### Create database structure
+### Setting up the Backend
 
 All the commands below must be executed on backend directory
 
@@ -64,6 +36,15 @@ All the commands below must be executed on backend directory
   cd backend
 ```
 
+#### install dependencies
+
+``` 
+  # run yarn command
+  yarn
+```
+
+#### Create database strucure
+
 Run the migrations to create the correct database structure on "gympoint"
 
 ```
@@ -71,7 +52,7 @@ Run the migrations to create the correct database structure on "gympoint"
   yarn sequelize db:migrate
 ```
 
-### Create the admin
+#### Create the admin user
 
 In order to create the admin user run:
 
@@ -87,27 +68,56 @@ it will create a fake admin user with the credentials:
 
 **Note:** these credentials must be used to signin on frontend application
 
-### Run the applications
+#### Start the Server
 
-Backend (must be executed before frontend and mobile)
+**Note:** Frontend and mobile applications depends on backend to be running
 
-``` #  navigate to backend directory
-    cd backend 
+``` 
     # Run yarn dev command
     yarn dev
 ```
 
-**Note:** Frontend and mobile applications are independent, but both depends on backend
+### Setting up Frontend Application (ReactJS)
 
-#### Frontend
+All the commands below must be executed on frontend directory
 
-``` #  navigate to frontend directory
-    cd frontend 
+```
+  # from project directory
+  # navigate to frontend directory
+  cd frontend
+```
+
+#### install dependencies
+
+``` 
+  # run yarn command
+  yarn
+```
+
+#### Start the application
+
+``` 
     # Run yarn start command
     yarn start
 ```
 
-#### Mobile
+### Setting up Mobile Application (React Native)
+
+All the commands below must be executed on mobile directory
+
+```
+  # from project directory
+  # navigate to mobile directory
+  cd mobile
+```
+
+#### install dependencies
+``` 
+  # run yarn command
+  yarn
+```
+
+#### Start the application
 
 **Note:** this application only works on Android
 
