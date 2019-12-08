@@ -81,8 +81,8 @@ In order to create the admin user run:
 
 this will create a fake admin user with the credentials:
 
-* email: admin@gympoint.com *
-* password: 123456 *
+*email: admin@gympoint.com*
+*password: 123456*
 
 ### Run the applications
 
@@ -94,7 +94,7 @@ Backend (must be executed before frontend and mobile)
     yarn dev
 ```
 
-Note: Frontend and mobile applications are independent, but both depends on backend
+**Note:** Frontend and mobile applications are independent, but both depends on backend
 
 #### Frontend
 
