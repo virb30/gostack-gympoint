@@ -36,6 +36,21 @@ All the commands below must be executed on backend directory
   cd backend
 ```
 
+#### Environment configuration
+
+In order to setup the environment variables, copy or rename .env.example to .env and fill out with your own settings:
+
+Generate your own app secret key and fill out the *Auth* section APP_SECRET variable.
+
+**Note:** If using the container provided set *Database* section variables as follow:
+
+> DB_HOST=localhost  
+DB_USER=postgres  
+DB_PASS=docker  
+DB_NAME=gympoint
+
+For mail functions, fill out the *Mail* section variables with your own setting
+
 #### Install dependencies
 
 Install/upgrade project dependencies:
@@ -104,6 +119,8 @@ Install/upgrade project dependencies:
     # Run yarn start command
     yarn start
 ```
+
+Access the application using the following URL: [http://localhost:3333](http://localhost:3333)
 
 ### Setting up Mobile Application (React Native)
 
