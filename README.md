@@ -128,7 +128,7 @@ Install/upgrade project dependencies:
 
 **Note:** this application only works on ***Android***
 
-First of all, start android emulator and run:
+First of all, start android emulator then run:
 
 ``` 
   # Run yarn start command
