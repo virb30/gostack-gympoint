@@ -94,6 +94,8 @@ it will create a fake admin user with the credentials:
     yarn dev
 ```
 
+The default API URL is: [http://localhost:3333](http://localhost:3333)
+
 ### Setting up Frontend Application (ReactJS)
 
 All the commands below must be executed on frontend directory
@@ -120,7 +122,7 @@ Install/upgrade project dependencies:
     yarn start
 ```
 
-Access the application using the following URL: [http://localhost:3333](http://localhost:3333)
+Access the application using the following URL: [http://localhost:3000](http://localhost:3000)
 
 ### Setting up Mobile Application (React Native)
 
