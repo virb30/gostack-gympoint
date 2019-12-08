@@ -4,7 +4,7 @@ import { Image } from 'react-native';
 
 import logo from '~/assets/logo.png';
 
-import { signIn } from '~/store/modules/student/actions';
+import { signInRequest } from '~/store/modules/student/actions';
 
 import Button from '~/components/Button';
 import { Container, Logo, TextLogo, Form, FormInput } from './styles';
@@ -14,7 +14,7 @@ export default function SignIn() {
   const dispatch = useDispatch();
 
   function handleSubmit() {
-    dispatch(signIn(student));
+    dispatch(signInRequest(student));
   }
 
   return (

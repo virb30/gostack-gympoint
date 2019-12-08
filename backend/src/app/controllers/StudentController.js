@@ -31,7 +31,7 @@ class StudentController {
     });
 
     if (!student) {
-      return res.json(400).json({ error: 'Student not found' });
+      return res.status(400).json({ error: 'Student not found' });
     }
 
     return res.json(student);
@@ -41,7 +41,7 @@ class StudentController {
     const student = await Student.findByPk(req.params.id);
 
     if (!student) {
-      return res.json(400).json({ error: 'Student not found' });
+      return res.status(400).json({ error: 'Student not found' });
     }
 
     await student.destroy();
